@@ -1,4 +1,4 @@
-@use '../utils' as *;
+// @use '../utils' as *;
 
   /*
  ::::::::::::::::::::::::::
@@ -62,11 +62,11 @@
       width: 75%;
       background-color: #F4F0FF;
 
-      @media #{$md} {
+      @media (max-width: #{$md}) {
         display: none;
       }
 
-      @media #{$xs} {
+      @media (max-width: #{$xs}) {
         display: none;
       }
 

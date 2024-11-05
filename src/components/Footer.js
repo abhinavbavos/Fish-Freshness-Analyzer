@@ -1,6 +1,8 @@
 import React from 'react';
 import footerShape1 from '../assets/images/footer-shape1.png';
 import footerShape2 from '../assets/images/footer-shape2.png';
+import '../scss/main.scss'
+
 
 function Footer() {
   return (
@@ -11,7 +13,7 @@ function Footer() {
         <div className="row">
           <div className="col-md-6">
             <div className="copyright-area">
-              <p>© Copyright 2024 - Fishin. All Rights Reserved</p>
+              <p>© Copyright 2024 - CIFT. All Rights Reserved</p>
             </div>
           </div>
           <div className="col-md-6">

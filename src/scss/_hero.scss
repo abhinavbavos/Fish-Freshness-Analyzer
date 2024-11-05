@@ -1,4 +1,4 @@
-@use '../utils' as *;
+// @use '../utils' as *;
 
   /*
  ::::::::::::::::::::::::::
@@ -50,13 +50,13 @@
       font-weight: 600;
       line-height: 70px; /* 109.375% */
 
-      @media #{$md} {
+      @media (max-width: #{$md}) {
         font-size: 40px;
         line-height: 48px;
         padding-top: 30px;
       }
 
-      @media #{$xs} {
+      @media (max-width: #{$xs}) {
         font-size: 40px;
         line-height: 48px;
         padding-top: 30px;
@@ -72,11 +72,11 @@
         border-radius: 5px;
       }
 
-      @media #{$md} {
+      @media (max-width: #{$md}) {
         margin-right: 0;
         height: 300px;
       }
-      @media #{$xs} {
+      @media (max-width: #{$xs}) {
         margin-right: 0;
         height: 300px;
       }
@@ -98,11 +98,11 @@
     .main-image {
       margin-left: 40px;
 
-      @media #{$md} {
+      @media (max-width: #{$md}) {
         margin-left: 0;
         margin-bottom: 50px;
       }
-      @media #{$xs} {
+      @media (max-width: #{$xs}) {
         margin-left: 0;
         margin-bottom: 50px;
       }
@@ -123,7 +123,7 @@
 .tp-slider-wrapper {
   min-height: 740px;
   position: relative;
-  @media #{$xs} {
+  @media (max-width: #{$xs}) {
     min-height: auto;
   }
   .tp-slider-arrow-box {
@@ -292,11 +292,11 @@
   font-weight: 600;
   line-height: 70px; /* 109.375% */
 
-  @media #{$md} {
+  @media (max-width: #{$md}) {
     font-size: 40px;
     line-height: 48px;
   }
-  @media #{$xs} {
+  @media (max-width: #{$xs}) {
     font-size: 40px;
     line-height: 48px;
   }
@@ -745,7 +745,7 @@
     .buttons {
       a {
         margin-left: 16px;
-        @media #{$xs} {
+        @media (max-width: #{$xs}) {
           margin-left: 0;
         }
       }
@@ -786,12 +786,12 @@
       font-weight: 600;
       line-height: 70px; /* 109.375% */
 
-      @media #{$md} {
+      @media (max-width: #{$md}) {
         font-size: 40px;
         line-height: 48px;
       }
 
-      @media #{$xs} {
+      @media (max-width: #{$xs}) {
         font-size: 40px;
         line-height: 48px;
       }
@@ -812,7 +812,7 @@
     z-index: 3;
     margin-top: 110px;
 
-    @media #{$xs} {
+    @media (max-width: #{$xs}) {
       margin-top: 50px;
       margin-bottom: 50px;
     }
@@ -826,7 +826,7 @@
       position: absolute;
       left: 0;
       top: 0;
-      @media #{$xs} {
+      @media (max-width: #{$xs}) {
         height: 250px;
       }
     }
@@ -835,7 +835,7 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      @media #{$xs} {
+      @media (max-width: #{$xs}) {
         height: 250px;
       }
     }
@@ -854,7 +854,7 @@
     left: 0;
     bottom: 0;
 
-    @media #{$xs} {
+    @media (max-width: #{$xs}) {
       display: none;
     }
   }
@@ -863,7 +863,7 @@
     position: absolute;
     right: 50%;
     bottom: 0;
-    @media #{$xs} {
+    @media (max-width: #{$xs}) {
       display: none;
     }
   }
@@ -872,7 +872,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    @media #{$xs} {
+    @media (max-width: #{$xs}) {
       display: none;
     }
   }
@@ -920,12 +920,12 @@
       font-weight: 600;
       line-height: 70px; /* 109.375% */
 
-      @media #{$md} {
+      @media (max-width: #{$md}) {
         font-size: 40px;
         line-height: 48px;
       }
 
-      @media #{$xs} {
+      @media (max-width: #{$xs}) {
         font-size: 40px;
         line-height: 48px;
       }

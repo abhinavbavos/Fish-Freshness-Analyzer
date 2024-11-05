@@ -1,22 +1,16 @@
 import React from 'react';
+import logo from '../assets/images/logo.png';
+import '../scss/main.scss'
+
 
 function Header() {
   return (
-    <header>
-      <div className="header-area header-area1 header-area-all d-none d-lg-block" id="header">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="header-elements">
-                <div className="site-logo">
-                  <a href="index.html">
-                    <img src="assets/img/logo/header-logo1.png" alt="Logo" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <header style={{ position: 'absolute', top: 0, left: 0, width: '100%', zIndex: 10 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px 0' }}>
+        <a href="index.html">
+          <img src={logo} alt="Logo" style={{ maxWidth: '800px', marginBottom: '10px' }} /> {/* Increased size and margin */}
+        </a>
+        <div style={{ width: '40%', height: '1 px', backgroundColor: '#FFFFFF' }}></div> {/* Line under the logo */}
       </div>
     </header>
   );

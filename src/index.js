@@ -1,19 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import 'animate.css/animate.min.css'; // Import animate.css
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Import FontAwesome
-import { WOW } from 'wowjs'; // Import WOW.js
+import 'animate.css/animate.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
-// Initialize WOW.js
-const wow = new WOW();
-wow.init();
-wow.sync();  // Manually call sync()
+// Initialize AOS
+AOS.init({ duration: 1200, once: true });
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const container = document.getElementById('root');
+const root = createRoot(container);
+
 root.render(
   <React.StrictMode>
     <App />

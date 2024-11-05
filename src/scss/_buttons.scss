@@ -1,5 +1,8 @@
 
-@use '../utils/' as *;
+// @use '../utils/' as *;
+
+@import './variables';
+
 
   /*
  ::::::::::::::::::::::::::
@@ -122,9 +125,10 @@
     }
   }
 
-  @media #{$xs} {
+  @media (max-width: #{$xs}) {
     margin-top: 20px;
   }
+  
  }
 
 
@@ -212,11 +216,16 @@
   overflow: hidden;
   margin-left: 18px;
 
-  @media #{$xs} {
+  @media (max-width#{$xs}) {
     margin-left: 0;
     margin-right: 80px;
     margin-top: 20px;
   }
+
+  // @media (max-width: #{$xs}) {
+  //   margin-top: 20px;
+  // }
+  
 
   span.arrow {
     display: inline-block;
@@ -356,10 +365,13 @@
   overflow: hidden;
   margin-left: 16px;
 
-  @media #{$xs} {
+  @media (max-width: #{$xs}) {
     margin-left: 0;
     margin-top: 10px;
   }
+
+
+  
 
   span.arrow {
     display: inline-block;
@@ -582,7 +594,7 @@
   z-index: 9;
   margin-left: 16px;
 
-  @media #{$xs} {
+  @media (max-height: #{$xs}) {
     margin-left: 0;
     margin-right: 50px;
     margin-top: 20px;

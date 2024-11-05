@@ -1,4 +1,4 @@
-@use '../../utils/' as * ;
+// @use '../../utils/' as * ;
 
 /*
 ::::::::::::::::::::::::::
@@ -56,12 +56,12 @@
             line-height: 24px; /* 100% */
             padding-bottom: 22px;
 
-            @media #{$md} {
+            @media (max-width: #{$md}) {
                 padding-bottom: 16px ;
                 padding-top: 24px;
             }
 
-            @media #{$xs} {
+            @media (max-width: #{$xs}) {
                 padding-bottom: 16px ;
                 padding-top: 24px;
             }
@@ -168,7 +168,7 @@
 
         &.right {
             text-align: end;
-            @media #{$xs} {
+            @media (max-width: #{$xs}) {
                 text-align: start;
             }
         }
@@ -243,12 +243,12 @@
             line-height: 24px; /* 100% */
             padding-bottom: 22px;
 
-            @media #{$md} {
+            @media (max-width: #{$md}) {
                 padding-bottom: 16px ;
                 padding-top: 24px;
             }
 
-            @media #{$xs} {
+            @media (max-width: #{$xs}) {
                 padding-bottom: 16px ;
                 padding-top: 24px;
             }
@@ -356,7 +356,7 @@
         &.right {
             text-align: end;
 
-            @media #{$xs} {
+            @media (max-width: #{$xs}) {
                 text-align: start;
             }
         }
@@ -430,12 +430,12 @@
             line-height: 24px; /* 100% */
             padding-bottom: 22px;
 
-            @media #{$md} {
+            @media (max-width: #{$md}) {
                 padding-bottom: 16px ;
                 padding-top: 24px;
             }
 
-            @media #{$xs} {
+            @media (max-width: #{$xs}) {
                 padding-bottom: 16px ;
                 padding-top: 24px;
             }
@@ -607,10 +607,10 @@
 .rtl-dir {
     .footer3 {
         .footer-logo-area {
-            @media #{$md} {
+            @media (max-width: #{$md}) {
                 padding-right: 0;
             }
-            @media #{$xs} {
+            @media (max-width: #{$xs}) {
                 padding-right: 0;
             }
         }
@@ -670,12 +670,12 @@
             line-height: 24px; /* 100% */
             padding-bottom: 22px;
 
-            @media #{$md} {
+            @media (max-width: #{$md}) {
                 padding-bottom: 16px ;
                 padding-top: 24px;
             }
 
-            @media #{$xs} {
+            @media (max-width: #{$xs}) {
                 padding-bottom: 16px ;
                 padding-top: 24px;
             }
@@ -898,12 +898,12 @@
             line-height: 24px; /* 100% */
             padding-bottom: 22px;
 
-            @media #{$md} {
+            @media (max-width: #{$md}) {
                 padding-bottom: 16px ;
                 padding-top: 24px;
             }
 
-            @media #{$xs} {
+            @media (max-width: #{$xs}) {
                 padding-bottom: 16px ;
                 padding-top: 24px;
             }

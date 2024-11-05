@@ -1,16 +1,15 @@
-@use './colors'  as *;
-@use './fonts'  as *;
+// @use './colors'  as *;
+// @use './fonts'  as *;
 
 
 :root{
 
      //Colors Declearations
      @each $color, $shades in $colors {
-          @each $shade, $value in $shades {
-               --vtc-#{$color}-#{$shade}: #{$value};
+          .text-#{$color} {
+            color: map-get($colors, $color);
           }
-     }
-
+        }
      @each $font-w, $shades in $font-ws {
           @each $shade, $value in $shades {
                --f-#{$font-w}-#{$shade}: #{$value};
