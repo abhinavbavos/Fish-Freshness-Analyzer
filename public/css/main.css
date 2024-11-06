@@ -11055,8 +11055,10 @@ body.body {
 ::::::::::::::::::::::::::
 */
 .footer1 {
+  background-color: #001518;
   padding-top: 100px;
   position: relative;
+  z-index: 1;
 }
 .footer1 .footer-logo-area {
   padding-right: 60px;

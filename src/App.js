@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './scss/main.scss';
 import Preloader from './components/Preloader';
 import Header from './components/Header';
-import MobileHeader from './components/MobileHeader';
 import Hero from './components/Hero';
-import CaseSection from './components/CaseSection';
 import Footer from './components/Footer';
 import Pricing from './components/Pricing';
+import ImageUploadPage from './components/ImageUploadPage'; // Import the new page
 
 function App() {
   useEffect(() => {
@@ -16,15 +16,27 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Preloader />
-      <Header />
-      <MobileHeader />
-      <Hero />
-      <Pricing/>
-      {/* <CaseSection /> */}
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Preloader />
+        
+
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Hero />
+                <Pricing />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/image-upload" element={<ImageUploadPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

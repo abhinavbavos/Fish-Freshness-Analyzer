@@ -17,10 +17,10 @@ function Footer() {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="copyright-area right">
-              <a href="#">Privacy Policy</a>
-              <a href="#"> Terms & Conditions</a>
-            </div>
+          <div className="copyright-area right">
+  Developed By <a href="https://agrowtein.com" target="_blank" rel="noopener noreferrer">AGROWTEIN </a>
+</div>
+
           </div>
         </div>
       </div>

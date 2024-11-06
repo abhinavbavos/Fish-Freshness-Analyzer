@@ -1,13 +1,13 @@
 import React from 'react';
-import '../scss/main.scss'
-
+import '../scss/main.scss';
+import preloaderLogo from '../assets/images/loader.png';
 
 function Preloader() {
   return (
     <div id="preloader" className="preloader1">
       <div className="progress-circle-all">
         <div className="circle-inner">
-          <img src="assets/img/logo/preloader.svg" alt="Fishin Logo" className="fish" />
+          <img src={preloaderLogo} alt="Fishin Logo" className="fish" /> {/* Use imported logo */}
         </div>
         <div className="circle-progress"></div>
       </div>

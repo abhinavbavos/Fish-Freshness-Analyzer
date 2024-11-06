@@ -29,7 +29,7 @@ function Hero() {
                 </p>
               </div>
               <div className="buttons" data-aos="zoom-in-up" data-aos-duration="900">
-                <a className="theme-btn1" href="CaseSection.js" style={{ textDecoration: 'none' }}>
+                <a className="theme-btn1" href="/image-upload" style={{ textDecoration: 'none' }}>
                   Get Started <span className="arrow"><i className="fa-solid fa-arrow-right"></i></span>
                 </a>
               </div>

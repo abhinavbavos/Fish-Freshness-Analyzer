@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "aos/dist/aos.css"; // Import AOS CSS for animations
 import AOS from "aos";
+import pricingImage from '../assets/images/pricing-img.png';
 
 // Import images
 import spanIcon from "../assets/images/span-icon1.png";
-import pricingImg from "../assets/images/pricing-img.png";
 import shape1 from "../assets/images/pricing-image-shape1.png";
 import shape2 from "../assets/images/pricing-image-shape2.png";
 import pricingIcon from "../assets/images/pricing-icon.png";
@@ -47,9 +47,9 @@ const Pricing = () => {
         <div className="row _relative">
           <div className="col-lg-4">
             <div className="images-area">
-              <div className="image image-anime reveal">
-                <img src={pricingImg} alt="" />
-              </div>
+            <div className="image image-anime reveal">
+      <img src={pricingImage} alt="Pricing Image" />
+    </div>
               <img src={shape1} alt="" className="shape1" />
               <img src={shape2} alt="" className="shape2" />
             </div>
@@ -73,7 +73,7 @@ const Pricing = () => {
                           have the perfect plan for you
                         </p>
                         <div className="space30"></div>
-                        <a className="theme-btn1" href="pricing.html">
+                        <a className="theme-btn1" href="/image-upload">
                           Scan Now{" "}
                           <span className="arrow">
                             <i className="fa-solid fa-arrow-right"></i>
@@ -111,7 +111,7 @@ const Pricing = () => {
                           have the perfect plan for you
                         </p>
                         <div className="space30"></div>
-                        <a className="theme-btn1" href="pricing.html">
+                        <a className="theme-btn1" href="/image-upload">
                           Scan Now{" "}
                           <span className="arrow">
                             <i className="fa-solid fa-arrow-right"></i>
@@ -149,7 +149,7 @@ const Pricing = () => {
                           have the perfect plan for you
                         </p>
                         <div className="space30"></div>
-                        <a className="theme-btn1" href="pricing.html">
+                        <a className="theme-btn1" href="/image-upload">
                           Scan Now{" "}
                           <span className="arrow">
                             <i className="fa-solid fa-arrow-right"></i>
