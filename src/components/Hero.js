@@ -29,10 +29,11 @@ function Hero() {
                 </p>
               </div>
               <div className="buttons" data-aos="zoom-in-up" data-aos-duration="900">
-                <a className="theme-btn1" href="/image-upload" style={{ textDecoration: 'none' }}>
-                  Get Started <span className="arrow"><i className="fa-solid fa-arrow-right"></i></span>
-                </a>
-              </div>
+  <a className="theme-btn1" href="#pricing" style={{ textDecoration: 'none' }}>
+    Get Started <span className="arrow"><i className="fa-solid fa-arrow-right"></i></span>
+  </a>
+</div>
+
               {/* Shape animations */}
               <div className="image2 shape-animation4">
                 <img src={shape1} alt="Decorative Shape 1" />

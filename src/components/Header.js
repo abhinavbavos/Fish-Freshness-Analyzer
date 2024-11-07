@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo2.png';
 import '../scss/main.scss';
 
 function Header() {
@@ -10,12 +10,12 @@ function Header() {
           src={logo}
           alt="Logo"
           style={{
-            maxWidth: '800px',
+            maxWidth: '900px',
             width: '100%', // Makes the image responsive
-            marginBottom: '10px',
+            marginBottom: '5px',
           }}
         />
-        <div style={{ width: '60%', height: '1px', backgroundColor: '#FFFFFF' }}></div> {/* Line under the logo */}
+        {/* <div style={{ width: '30%', height: '1px', backgroundColor: '#FFFFFF' }}></div> Line under the logo */}
       </div>
     </header>
   );
