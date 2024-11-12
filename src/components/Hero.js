@@ -1,69 +1,76 @@
 import React from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import '../scss/main.scss'
-
+import '../scss/main.scss';
 
 // Import assets for the hero section
 import shape1 from '../assets/images/hero-image1-shape1.png';
 import shape2 from '../assets/images/hero-image1-shape2.png';
-import shape7 from '../assets/images/hero-image2-shape1.png';
 import shape3 from '../assets/images/hero-sec-shape1.png';
 import shape4 from '../assets/images/hero-sec-shape2.png';
 import shape5 from '../assets/images/hero-sec-shape3.png';
 import shape6 from '../assets/images/hero-sec-shape4.png';
-import FishModel from './FishModel';
+import heroImage1 from '../assets/images/freshfish.png';
+import heroImage2 from '../assets/images/freshmackerel.jpg';
 
 function Hero() {
   return (
     <div className="hero-area1">
       <div className="container">
-        <div className="row align-items-center">
-          {/* Left Column: Heading and Subheading */}
-          <div className="col-lg-6 col-md-12 text-center text-lg-start">
+        <div className="row">
+          {/* Left Column */}
+          <div className="col-lg-5">
             <div className="main-heading">
-              <h1 className="text-anime-style-3">Fish Freshness Analyzer</h1>
-              <div className="heading1-w">
-                <p data-aos="zoom-in-up" data-aos-duration="700">
-                  Our Fish Freshness Analyzer utilizes state-of-the-art 3D technology to evaluate fish freshness with precision and reliability.
-                </p>
+              {/* Images and shapes */}
+              <div className="image1 image-anime reveal">
+                <img src={heroImage2} alt="Fresh Mackerel" />
               </div>
-              <div className="buttons" data-aos="zoom-in-up" data-aos-duration="900">
-  <a className="theme-btn1" href="#pricing" style={{ textDecoration: 'none' }}>
-    Get Started <span className="arrow"><i className="fa-solid fa-arrow-right"></i></span>
-  </a>
-</div>
-
-              {/* Shape animations */}
               <div className="image2 shape-animation4">
-                <img src={shape1} alt="Decorative Shape 1" />
+                <img src={shape1} alt="" aria-hidden="true" />
               </div>
               <div className="image3 animate2">
-                <img src={shape2} alt="Decorative Shape 2" />
+                <img src={shape2} alt="" aria-hidden="true" />
+              </div>
+
+              {/* Text Content */}
+              <div className="space30"></div>
+              <div className="heading1-w">
+                <p data-aos="zoom-in-up" data-aos-duration="700">
+                  Our solution leverages advanced artificial intelligence (AI) techniques, incorporating deep learning models, to accurately analyze and predict fish freshness. Experience cutting-edge technology that ensures precision and reliability.
+                </p>
+              </div>
+
+              {/* Buttons */}
+              <div className="space30"></div>
+              <div className="buttons" data-aos="zoom-in-up" data-aos-duration="900">
+                <a className="theme-btn1" href="#pricing" style={{ textDecoration: 'none' }}>
+                  Get Started <span className="arrow"><i className="fa-solid fa-arrow-right"></i></span>
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Right Column: 3D Model */}
-          <div className="col-lg-6 col-md-12 d-flex justify-content-center">
-            <Canvas style={{ height: '500px', width: '100%' }}
-              camera={{ position: [6, 1, 2], fov: 50 }}>
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[2, 2, 5]} intensity={1} />
-              <FishModel />
-              <OrbitControls enableZoom={false} />
-            </Canvas>
+          {/* Right Column */}
+          <div className="col-lg-7">
+            <div className="main-heading">
+              <h1 className="text-anime-style-3">Fish Freshness Analysis with AI</h1>
+              <div className="space60"></div>
+              <div className="main-image">
+                <div className="reveal image-anime">
+                  <img src={heroImage1} alt="Fresh Fish" />
+                </div>
+                <div className="shape animate4">
+                  <img src={shape3} alt="" aria-hidden="true" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
-      {/* Background Shapes */}
-      <img className="sec-shape1" src={shape3} alt="Section Shape 1" />
-      <img className="sec-shape2" src={shape4} alt="Section Shape 2" />
-      <img className="sec-shape3 animate1" src={shape5} alt="Section Shape 3" />
-      <img className="sec-shape4 animate3" src={shape6} alt="Section Shape 4" />
 
-     
+      {/* Background Shapes */}
+      <img className="sec-shape1" src={shape3} alt="" aria-hidden="true" />
+      <img className="sec-shape2" src={shape4} alt="" aria-hidden="true" />
+      <img className="sec-shape3 animate1" src={shape5} alt="" aria-hidden="true" />
+      <img className="sec-shape4 animate3" src={shape6} alt="" aria-hidden="true" />
     </div>
   );
 }

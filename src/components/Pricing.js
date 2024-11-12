@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "aos/dist/aos.css"; // Import AOS CSS for animations
 import AOS from "aos";
-import pricingImage from '../assets/images/pricing-img.png';
+import fishingImage from '../assets/images/fishing.jpg';
 
 // Import images
 import spanIcon from "../assets/images/span-icon1.png";
@@ -34,10 +34,7 @@ const Pricing = () => {
               </span>
               <div className="space16"></div>
               <p data-aos="fade-left" data-aos-duration="800">
-                Join us & embark on your next outdoor adventure with confidence,
-                knowing <br />
-                that your membership unlocks a world of possibilities in the
-                wild.
+                Using advanced AI and deep learning, our Fish Freshness Analyzer determines the quality and freshness of various fish species. Discover how it works by selecting a fish type below.
               </p>
             </div>
           </div>
@@ -47,16 +44,16 @@ const Pricing = () => {
         <div className="row _relative">
           <div className="col-lg-4">
             <div className="images-area">
-            <div className="image image-anime reveal">
-      <img src={pricingImage} alt="Pricing Image" />
-    </div>
+              <div className="image image-anime reveal">
+                <img src={fishingImage} alt="Fishing" />
+              </div>
               <img src={shape1} alt="" className="shape1" />
               <img src={shape2} alt="" className="shape2" />
             </div>
           </div>
           <div className="col-lg-8">
             <div className="pricing-box-area">
-              {/* Weekly Pass */}
+              {/* Sardine */}
               <div className="single-box">
                 <div className="row">
                   <div className="col-lg-8">
@@ -68,10 +65,7 @@ const Pricing = () => {
                         <h3>SARDINE</h3>
                         <div className="space16"></div>
                         <p>
-                          Whether you're an avid angler, a seasoned hunter, or
-                          simply someone who revels in the great outdoors, we
-                          have the perfect plan for you
-                        </p>
+                        Sardines are small, oily fish popular in cuisines worldwide. Our analyzer inspects sardine freshness, providing instant insights to ensure peak quality and flavor.                        </p>
                         <div className="space30"></div>
                         <a className="theme-btn1" href="/image-upload">
                           Scan Now{" "}
@@ -86,15 +80,15 @@ const Pricing = () => {
                     <div className="pricing-list">
                       <img
                         src={Sardine}
-                        alt="Weekly Pass Details"
-                        className="weekly-pass-image"
+                        alt="Sardine Details"
+                        className="fish-image"
                       />
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Monthly Pass */}
+              {/* Tilapia */}
               <div className="single-box">
                 <div className="row">
                   <div className="col-lg-8">
@@ -106,10 +100,7 @@ const Pricing = () => {
                         <h3>TILAPIA</h3>
                         <div className="space16"></div>
                         <p>
-                          Whether you're an avid angler, a seasoned hunter, or
-                          simply someone who revels in the great outdoors, we
-                          have the perfect plan for you
-                        </p>
+                        Known for its mild flavor and firm texture, tilapia is a favorite in many dishes. Our tool evaluates its freshness to ensure optimal quality and taste in every meal.                        </p>
                         <div className="space30"></div>
                         <a className="theme-btn1" href="/image-upload">
                           Scan Now{" "}
@@ -124,15 +115,15 @@ const Pricing = () => {
                     <div className="pricing-list">
                       <img
                         src={Tilapia}
-                        alt="Weekly Pass Details"
-                        className="weekly-pass-image"
+                        alt="Tilapia Details"
+                        className="fish-image"
                       />
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Yearly Pass */}
+              {/* Mackrel */}
               <div className="single-box">
                 <div className="row">
                   <div className="col-lg-8">
@@ -144,10 +135,7 @@ const Pricing = () => {
                         <h3>MACKREL</h3>
                         <div className="space16"></div>
                         <p>
-                          Whether you're an avid angler, a seasoned hunter, or
-                          simply someone who revels in the great outdoors, we
-                          have the perfect plan for you
-                        </p>
+                        Mackerel, known for its rich flavor and high omega-3 content, requires careful handling to maintain quality. Our analyzer assesses mackerel freshness, ensuring that consumers receive fish at its peak nutritional value and flavor.                        </p>
                         <div className="space30"></div>
                         <a className="theme-btn1" href="/image-upload">
                           Scan Now{" "}
@@ -162,8 +150,8 @@ const Pricing = () => {
                     <div className="pricing-list">
                       <img
                         src={Mackrel}
-                        alt="Weekly Pass Details"
-                        className="weekly-pass-image"
+                        alt="Mackrel Details"
+                        className="fish-image"
                       />
                     </div>
                   </div>

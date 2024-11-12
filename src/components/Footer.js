@@ -1,8 +1,7 @@
 import React from 'react';
 import footerShape1 from '../assets/images/footer-shape1.png';
 import footerShape2 from '../assets/images/footer-shape2.png';
-import '../scss/main.scss'
-
+import '../scss/main.scss';
 
 function Footer() {
   return (
@@ -12,15 +11,28 @@ function Footer() {
         <div className="footer-border"></div>
         <div className="row">
           <div className="col-md-6">
-            <div className="copyright-area">
+            <div
+              className="copyright-area"
+              style={{ color: '#ffffff' }} // Set text color for copyright section
+            >
               <p>© Copyright 2024 - CIFT. All Rights Reserved</p>
             </div>
           </div>
           <div className="col-md-6">
-          <div className="copyright-area right">
-  Developed By <a href="https://agrowtein.com" target="_blank" rel="noopener noreferrer">AGROWTEIN </a>
-</div>
-
+            <div
+              className="copyright-area right"
+              style={{ color: '#ffffff' }} // Set text color for "Developed By" text
+            >
+              Developed By{" "}
+              <a
+                href="https://agrowtein.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#03856d', textDecoration: 'none', fontWeight: 'bold' }} // Set color for Agrowtein link
+              >
+                AGROWTEIN
+              </a>
+            </div>
           </div>
         </div>
       </div>
