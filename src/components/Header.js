@@ -1,6 +1,9 @@
 import React from 'react';
-import logo from '../assets/images/logo2.png';
+// import logo from '../../public/images/logo2.png';
 import '../scss/main.scss';
+
+const logo = process.env.PUBLIC_URL + '/images/logo2.png';
+
 
 function Header() {
   return (

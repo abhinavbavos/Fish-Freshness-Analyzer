@@ -2,14 +2,25 @@ import React from 'react';
 import '../scss/main.scss';
 
 // Import assets for the hero section
-import shape1 from '../assets/images/hero-image1-shape1.png';
-import shape2 from '../assets/images/hero-image1-shape2.png';
-import shape3 from '../assets/images/hero-sec-shape1.png';
-import shape4 from '../assets/images/hero-sec-shape2.png';
-import shape5 from '../assets/images/hero-sec-shape3.png';
-import shape6 from '../assets/images/hero-sec-shape4.png';
-import heroImage1 from '../assets/images/freshfish.png';
-import heroImage2 from '../assets/images/freshmackerel.jpg';
+// import shape1 from '../../public/images/hero-image1-shape1.png';
+// import shape2 from '../../public/images/hero-image1-shape2.png';
+// import shape3 from '../../public/images/hero-sec-shape1.png';
+// import shape4 from '../../public/images/hero-sec-shape2.png';
+// import shape5 from '../../public/images/hero-sec-shape3.png';
+// import shape6 from '../../public/images/hero-sec-shape4.png';
+// import heroImage1 from '../../public/images/freshfish.png';
+// import heroImage2 from '../../public/images/freshmackerel.jpg';
+
+const shape1 = process.env.PUBLIC_URL + '/images/hero-image1-shape1.png';
+const shape2 = process.env.PUBLIC_URL + '/images/hero-image1-shape2.png';
+const shape3 = process.env.PUBLIC_URL + '/images/hero-sec-shape1.png';
+const shape4 = process.env.PUBLIC_URL + '/images/hero-sec-shape2.png';
+const shape5 = process.env.PUBLIC_URL + '/images/hero-sec-shape3.png';
+const shape6 = process.env.PUBLIC_URL + '/images/hero-sec-shape4.png';
+const heroImage1 = process.env.PUBLIC_URL + '/images/freshfish.png';
+const heroImage2 = process.env.PUBLIC_URL + '/images/freshmackerel.jpg';
+
+
 
 function Hero() {
   return (

@@ -1,7 +1,11 @@
 import React from 'react';
-import footerShape1 from '../assets/images/footer-shape1.png';
-import footerShape2 from '../assets/images/footer-shape2.png';
+// import footerShape1 from '../../public/images/footer-shape1.png';
+// import footerShape2 from '../../public/images/footer-shape2.png';
 import '../scss/main.scss';
+
+const footerShape1 = process.env.PUBLIC_URL + '/images/footer-shape1.png';
+const footerShape2 = process.env.PUBLIC_URL + '/images/footer-shape2.png';
+
 
 function Footer() {
   return (

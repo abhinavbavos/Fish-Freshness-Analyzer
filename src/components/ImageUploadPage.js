@@ -1,18 +1,27 @@
 import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
+// import logo from '../../public/images/logo.png';
 import '../scss/main.scss';
 
 // Import icons from React Icons
 import { FiUpload, FiCamera } from 'react-icons/fi';
 
 // Import images
-import spanIcon from '../assets/images/span-icon1.png';
-import shape1 from '../assets/images/tes1-shape1.png';
-import shape2 from '../assets/images/tes1-shape2.png';
-import shape3 from '../assets/images/tes1-shape3.png';
-import shape4 from '../assets/images/tes1-shape4.png';
-import shape5 from '../assets/images/tes1-shape5.png';
+// import spanIcon from '../../public/images/span-icon1.png';
+// import shape1 from '../../public/images/tes1-shape1.png';
+// import shape2 from '../../public/images/tes1-shape2.png';
+// import shape3 from '../../public/images/tes1-shape3.png';
+// import shape4 from '../../public/images/tes1-shape4.png';
+// import shape5 from '../../public/images/tes1-shape5.png';
+
+const logo = process.env.PUBLIC_URL + '/images/logo.png';
+const spanIcon = process.env.PUBLIC_URL + '/images/span-icon1.png';
+const shape1 = process.env.PUBLIC_URL + '/images/tes1-shape1.png';
+const shape2 = process.env.PUBLIC_URL + '/images/tes1-shape2.png';
+const shape3 = process.env.PUBLIC_URL + '/images/tes1-shape3.png';
+const shape4 = process.env.PUBLIC_URL + '/images/tes1-shape4.png';
+const shape5 = process.env.PUBLIC_URL + '/images/tes1-shape5.png';
+
 
 const ImageUploadPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);

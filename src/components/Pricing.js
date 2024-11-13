@@ -1,18 +1,30 @@
 import React, { useEffect } from "react";
 import "aos/dist/aos.css"; // Import AOS CSS for animations
 import AOS from "aos";
-import fishingImage from '../assets/images/fishing.jpg';
+// import fishingImage from '../../public/images/fishing.jpg';
 
 // Import images
-import spanIcon from "../assets/images/span-icon1.png";
-import shape1 from "../assets/images/pricing-image-shape1.png";
-import shape2 from "../assets/images/pricing-image-shape2.png";
-import pricingIcon from "../assets/images/pricing-icon.png";
-import secShape1 from "../assets/images/pricing-sec-shape1.png";
-import secShape2 from "../assets/images/pricing-sec-shape2.png";
-import Sardine from "../assets/images/Sardine.jpg";
-import Tilapia from "../assets/images/Tilapia.png";
-import Mackrel from "../assets/images/Mackrel.jpg";
+// import spanIcon from "../../public/images/span-icon1.png";
+// import shape1 from "../../public/images/pricing-image-shape1.png";
+// import shape2 from "../../public/images/pricing-image-shape2.png";
+// import pricingIcon from "../../public/images/pricing-icon.png";
+// import secShape1 from "../../public/images/pricing-sec-shape1.png";
+// import secShape2 from "../../public/images/pricing-sec-shape2.png";
+// import Sardine from "../../public/images/Sardine.jpg";
+// import Tilapia from "../../public/images/Tilapia.png";
+// import Mackrel from "../../public/images/Mackrel.jpg";
+
+const fishingImage = process.env.PUBLIC_URL + '/images/fishing.jpg';
+const spanIcon = process.env.PUBLIC_URL + '/images/span-icon1.png';
+const shape1 = process.env.PUBLIC_URL + '/images/pricing-image-shape1.png';
+const shape2 = process.env.PUBLIC_URL + '/images/pricing-image-shape2.png';
+const pricingIcon = process.env.PUBLIC_URL + '/images/pricing-icon.png';
+const secShape1 = process.env.PUBLIC_URL + '/images/pricing-sec-shape1.png';
+const secShape2 = process.env.PUBLIC_URL + '/images/pricing-sec-shape2.png';
+const Sardine = process.env.PUBLIC_URL + '/images/Sardine.jpg';
+const Tilapia = process.env.PUBLIC_URL + '/images/Tilapia.png';
+const Mackrel = process.env.PUBLIC_URL + '/images/Mackrel.jpg';
+
 
 const Pricing = () => {
   useEffect(() => {
