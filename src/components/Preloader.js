@@ -2,7 +2,7 @@ import React from 'react';
 import '../scss/main.scss';
 // import preloaderLogo from '../../public/images/loader.png';
 
-const preloaderLogo = process.env.PUBLIC_URL + '/images/loader.png';
+const preloaderLogo = process.env.PUBLIC_URL + '/images/icar.jpg';
 
 
 function Preloader() {
