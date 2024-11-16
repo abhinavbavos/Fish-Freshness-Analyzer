@@ -2,7 +2,10 @@
   "name": "cift-app",
   "version": "0.1.0",
   "private": true,
-  "main": "main.js",
+  "author": "Agrowtein",
+  "description": "Fresh Fish Analyzer",
+  "homepage": "./",
+  "main": "./public/electron.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
@@ -30,7 +33,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron": "node_modules\\.bin\\electron.cmd ."
+    "electron:start": "concurrently -k \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:4000 && electronmon .\"",
+    "electron:package:mac": "npm build && electron-builder -m -c.extraMetadata.main=build/electron.js",
+"electron:package:win": "npm run build && electron-builder -w -c.extraMetadata.main=build/electron.js",
+    "electron:package:linux": "npm build && electron-builder -l -c.extraMetadata.main=build/electron.js"
   },
   "eslintConfig": {
     "extends": [
@@ -51,9 +57,35 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
     "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "electron-packager": "^17.1.2",
+    "electronmon": "^2.0.3",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.80.6",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^10.1.1",
+    "wait-on": "^8.0.1"
+  },
+  "build": {
+    "appId": "com.electron.myapp",
+    "productName": "My Electron App",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "public"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "deb"
+    }
   }
 }
