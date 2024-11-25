@@ -1,31 +1,36 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
+let mainWindow;
+
 function createWindow() {
-    const win = new BrowserWindow({
-      width: 1024,
-      height: 768,
-      webPreferences: {
-        nodeIntegration: true,
-        // preload: path.join(__dirname, 'preload.js')  // Only if you are using preload.js
-      },
+    mainWindow = new BrowserWindow({
+        width: 800,
+        height: 600,
+        webPreferences: {
+            contextIsolation: true,
+            nodeIntegration: false,
+            preload: path.join(__dirname, 'preload.js'), // Optional: if you have a preload script
+        },
     });
 
-  // Load your React app
-//   win.loadURL('http://localhost:3000'); // If running in development mode
+    // Correctly load the React app
+    const startURL = path.join(__dirname, 'build', 'index.html');
+    mainWindow.loadFile(startURL).catch((error) => {
+        console.error("Failed to load index.html:", error);
+    });
 
-  // For production, use this:
-  win.loadFile(path.join(__dirname, 'build', 'index.html')); // For production build
+    mainWindow.on('closed', () => {
+        mainWindow = null;
+    });
 }
 
-app.whenReady().then(() => {
-  createWindow();
-  
-  app.on('activate', () => {
-    if (BrowserWindow.getAllWindows().length === 0) createWindow();
-  });
-});
+app.whenReady().then(createWindow);
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') app.quit();
+    if (process.platform !== 'darwin') app.quit();
+});
+
+app.on('activate', () => {
+    if (BrowserWindow.getAllWindows().length === 0) createWindow();
 });
